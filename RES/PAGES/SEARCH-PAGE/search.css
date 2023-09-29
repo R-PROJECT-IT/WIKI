@@ -1,0 +1,124 @@
+html{
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    font-family: "Aileron";
+    overflow: auto;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body{
+    padding: 0%;
+    border-radius: 40px;
+    height: 100%;
+  }
+  
+  :root{
+    --Logo: #ABA9BF;
+    --Link: #EDD9A3;
+    --Shadow: #4E4E56;
+    --Shadow_2: rgba(78, 78, 86, 0.35);
+    --Black: #1e1e1e;
+    --White: #fff;
+    --mrg: 15%;
+  }
+
+.CARD-LIST{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Стили для экранов шире 1024px (например, настольных компьютеров) */
+@media screen and (min-width: 1024px) {
+  .CARD-LIST h1 {
+    width: 100%;
+    margin: 2% 10%;
+    text-align: center;
+    color: var(--Logo);
+    font-size: 3rem;
+  }
+}
+
+/* Стили для средних экранов (например, планшетов) */
+@media screen and (max-width: 1023px) {
+  .CARD-LIST h1 {
+    width: 100%;
+    margin: 2% 5%;
+    text-align: center;
+    color: var(--Logo);
+    font-size: 2.5rem;
+  }
+}
+
+/* Стили для маленьких экранов (например, мобильных устройств) */
+@media screen and (max-width: 767px) {
+  .CARD-LIST h1 {
+    width: 100%;
+    margin: 2% 2%;
+    text-align: center;
+    color: var(--Logo);
+    font-size: 2rem;
+  }
+}
+
+
+
+.CARDS{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 1%;
+}
+
+.CARD{
+    width: 450px;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 1% 1.5%;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: var(--White);
+    border: 0px solid var(--Logo);
+    box-shadow: var(--Logo) 0px 0px 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.4s ease;
+}
+
+.CARD:hover{
+    transform: scale(1.05);
+}
+
+
+.CARD img, .CARD p, .CARD h2{
+    width: 100%;
+    border-radius: 20px;
+    color: var(--Shadow);
+    padding: 1%;
+}
+
+
+
+.CARD button{
+    width: 100%;
+    height: auto;
+    padding: 2.5% 5%;
+    margin: 1% 2%;
+    border: none;
+    border-radius: 100px;
+    box-shadow: var(--Logo) 0px 0px 16px;
+    background-color: var(--White);
+}

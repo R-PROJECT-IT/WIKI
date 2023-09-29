@@ -1,0 +1,187 @@
+html{
+  border-radius: 40px;
+  width: 100%;
+  height: 90vh;
+  font-family: "Aileron";
+  overflow: hidden;
+}
+
+body{
+  padding: 0%;
+  border-radius: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root{
+  --Logo: #ABA9BF;
+  --Link: #EDD9A3;
+  --Shadow: #4E4E56;
+  --Black: #1e1e1e;
+  --White: #fff;
+  --mrg: 15%;
+}
+
+.HOME{
+  width: auto;
+  height: auto;
+  padding: 1%;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HOME h1{
+  width: 100%;
+  margin: calc(var(--mrg)/2) 40%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--Logo);
+  text-overflow: clip;
+}
+
+.HOME .INPUT_FRAME{
+  width: 100%;
+  height: 8%;
+  background-color: var(--White);
+  border-radius: 100px;
+  padding: 1% 2%;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.INPUT_FRAME button, .INPUT_FRAME input{
+  color: var(--Logo);
+  font-weight: 530;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  .INPUT_FRAME input{
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+
+  .INPUT_FRAME button, .ADD h3{
+    font-size: 2rem;
+  }
+
+  .HOME .INPUT_FRAME{
+    border: var(--Logo) 5px solid;
+  }
+
+  .ADD{
+    width: 50%;
+    height: 6%;
+    margin: calc(var(--mrg)/2) 0%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .HOME h1{
+    font-size: 10rem;
+  }
+
+  .ADD button{
+    font-size: 1.5rem;
+    border: var(--Logo) 5px solid;
+  }
+}
+
+/* Стили для средних экранов (например, планшетов) */
+@media screen and (max-width: 1023px) {
+  .INPUT_FRAME input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+
+  .INPUT_FRAME button, .ADD h3{
+    font-size: 1.5rem;
+  }
+
+  .ADD{
+    width: 60%;
+    height: 6%;
+    margin: calc(var(--mrg)/2) 0%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .HOME h1{
+    font-size: 8rem;
+  }
+
+  .ADD button{
+    font-size: 1.5rem;
+    border: var(--Logo) 3px solid;
+  }
+
+  .HOME .INPUT_FRAME{
+    border: var(--Logo) 3px solid;
+  }
+}
+
+/* Стили для маленьких экранов (например, мобильных устройств) */
+@media screen and (max-width: 767px) {
+  .INPUT_FRAME input{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+  }
+
+  .INPUT_FRAME button, .ADD h3{
+    font-size: 1rem;
+  }
+
+  .HOME h1{
+    font-size: 5rem;
+  }
+
+  .ADD button{
+    font-size: 0.9rem;
+    border: var(--Logo) 2px solid;
+  }
+
+  .HOME .INPUT_FRAME{
+    border: var(--Logo) 2px solid;
+  }
+}
+
+
+
+.INPUT_FRAME input:focus, .INPUT_FRAME button:hover{
+  color: var(--Shadow);
+}
+
+
+.ADD h3, .ADD button{
+  width: 100%;
+  text-align: center;
+  color: var(--Logo);
+}
+
+.ADD button{
+  margin: 0% 20%;
+  padding: 1% 0%;
+  height: 110%;
+  background-color: var(--White);
+  border-radius: 100px;
+}
